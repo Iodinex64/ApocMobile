@@ -5,11 +5,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.iodine.apocmobile.R
+import com.iodine.apocmobile.utils.DataManager
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        DataManager.readFromJSON(c = applicationContext)
 
         val worldButton = findViewById<Button>(R.id.goToWorldsActivityButton)
         worldButton.setOnClickListener {
