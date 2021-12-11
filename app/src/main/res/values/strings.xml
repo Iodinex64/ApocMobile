@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ApocMobile</string>
+    <string name="world_button_text">Worlds</string>
+    <string name="create_world_button_text">Create A World</string>
+    <string name="edit_world_button_text">Edit Worlds</string>
+    <string name="generic_back">Back</string>
+</resources>
