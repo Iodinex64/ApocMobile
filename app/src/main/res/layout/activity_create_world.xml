@@ -23,25 +23,8 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:text="@string/create_world_name_startertext" />
-
-        <EditText
-            android:id="@+id/createWorldLocation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:minHeight="48dp"
-            android:text="Location Placeholder Name" />
-
-        <EditText
-            android:id="@+id/createWorldCharacter"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:minHeight="48dp"
-            android:text="Character Placeholder Name" />
+            android:text="@string/create_world_name_startertext"
+            android:importantForAutofill="no" />
 
         <Button
             android:id="@+id/createWorldSubmitButton"

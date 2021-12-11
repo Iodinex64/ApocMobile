@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Timber.i("Went to main menu!")
+
         val worldButton = findViewById<Button>(R.id.goToWorldsActivityButton)
         worldButton.setOnClickListener {
             val worldIntent = Intent(this, WorldActivity::class.java)

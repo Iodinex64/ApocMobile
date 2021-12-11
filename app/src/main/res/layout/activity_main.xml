@@ -6,26 +6,51 @@
     android:layout_height="match_parent"
     tools:context=".activities.MainActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
-        android:layout_width="278dp"
-        android:layout_height="520dp"
+    <LinearLayout
+        android:layout_width="338dp"
+        android:layout_height="590dp"
+        android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:context=".activities.MainActivity">
+        app:layout_constraintTop_toTopOf="parent">
 
         <Button
             android:id="@+id/goToWorldsActivityButton"
-            android:layout_width="0dp"
-            android:layout_height="51dp"
-            android:text="@string/world_button_text"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.506"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.501" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/world_button_text" />
+
+        <Button
+            android:id="@+id/goToLocationsActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/locations" />
+
+        <Button
+            android:id="@+id/goToCharactersActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/characters" />
+
+        <Button
+            android:id="@+id/goToRacesActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/races" />
+
+        <Button
+            android:id="@+id/goToCreaturesActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/creatures" />
+
+        <Button
+            android:id="@+id/goToLandmarksActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/landmarks" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

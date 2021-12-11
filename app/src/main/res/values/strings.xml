@@ -5,4 +5,9 @@
     <string name="edit_world_button_text">Edit Worlds</string>
     <string name="generic_back">Back</string>
     <string name="create_world_name_startertext">World Name</string>
+    <string name="locations">Locations</string>
+    <string name="characters">Characters</string>
+    <string name="races">Races</string>
+    <string name="creatures">Creatures</string>
+    <string name="landmarks">Landmarks</string>
 </resources>

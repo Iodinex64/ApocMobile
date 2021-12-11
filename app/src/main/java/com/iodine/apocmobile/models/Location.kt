@@ -5,9 +5,9 @@ class Location constructor(
     var bio: String,
     var worldName: String = ""
 ) {
-    var landmarks = ArrayList<Landmark>()
-    var creatures = ArrayList<Creature>()
-    var races = ArrayList<Race>()
+    var landmarks = arrayListOf<Landmark>()
+    var creatures = arrayListOf<Creature>()
+    var races = arrayListOf<Race>()
     private var population: Int = 0
 
     fun calculatePop() {
