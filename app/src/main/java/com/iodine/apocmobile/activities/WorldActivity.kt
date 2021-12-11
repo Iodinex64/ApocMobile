@@ -18,8 +18,8 @@ class WorldActivity : AppCompatActivity() {
         }
 
         val createButton = findViewById<Button>(R.id.createWorldButton)
-        backButton.setOnClickListener {
-            val createWorldIntent = Intent(this, MainActivity::class.java)
+        createButton.setOnClickListener {
+            val createWorldIntent = Intent(this, CreateWorldActivity::class.java)
             startActivity(createWorldIntent)
         }
     }

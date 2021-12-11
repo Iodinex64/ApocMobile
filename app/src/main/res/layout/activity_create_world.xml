@@ -6,4 +6,54 @@
     android:layout_height="match_parent"
     tools:context=".activities.CreateWorldActivity">
 
+    <LinearLayout
+        android:layout_width="278dp"
+        android:layout_height="588dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/createWorldNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="@string/create_world_name_startertext" />
+
+        <EditText
+            android:id="@+id/createWorldLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Location Placeholder Name" />
+
+        <EditText
+            android:id="@+id/createWorldCharacter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Character Placeholder Name" />
+
+        <Button
+            android:id="@+id/createWorldSubmitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+
+        <Button
+            android:id="@+id/createWorldCancelButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

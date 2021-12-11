@@ -4,4 +4,5 @@
     <string name="create_world_button_text">Create A World</string>
     <string name="edit_world_button_text">Edit Worlds</string>
     <string name="generic_back">Back</string>
+    <string name="create_world_name_startertext">World Name</string>
 </resources>
