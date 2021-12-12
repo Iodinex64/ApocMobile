@@ -1,10 +1,11 @@
-package com.iodine.apocmobile.activities
+package com.iodine.apocmobile.activities.main
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.iodine.apocmobile.R
+import com.iodine.apocmobile.activities.world.WorldActivity
 import com.iodine.apocmobile.main.MainApp
 import timber.log.Timber
 

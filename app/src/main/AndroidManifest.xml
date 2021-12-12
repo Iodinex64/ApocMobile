@@ -11,16 +11,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ApocMobile">
         <activity
-            android:name=".activities.EditWorldActivity"
+            android:name=".activities.world.EditWorldActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.CreateWorldActivity"
+            android:name=".activities.world.CreateWorldActivity"
             android:exported="true" />
         <activity
-            android:name=".activities.WorldActivity"
+            android:name=".activities.world.WorldActivity"
             android:exported="true" />
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".activities.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

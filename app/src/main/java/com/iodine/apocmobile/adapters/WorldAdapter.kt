@@ -1,0 +1,35 @@
+package com.iodine.apocmobile.adapters
+
+import android.view.View
+import android.view.ViewGroup
+import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
+import com.iodine.apocmobile.R
+import com.iodine.apocmobile.models.World
+import com.iodine.apocmobile.utils.inflate
+
+public class WorldAdapter(private val worlds: ArrayList<World>)
+    : RecyclerView.Adapter<WorldAdapter.WorldHolder>()  {
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): WorldHolder {
+        val inflatedView = parent.inflate(R.layout.card_world, false)
+        return WorldHolder(inflatedView)
+    }
+
+    override fun onBindViewHolder(holder: WorldHolder, position: Int) {
+        val element = worlds[position]
+        // Updating the text of the txtName with this element
+        holder.worldName.text = element.name
+        holder.locationCount.text = "Locations: " + element.locations.size.toString()
+        holder.characterCount.text = "Characters: " + element.characters.size.toString()
+    }
+
+    override fun getItemCount() = worlds.size
+
+    class WorldHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val worldName = itemView.findViewById(R.id.worldCardTitle) as TextView
+        val locationCount = itemView.findViewById(R.id.worldCardLocationsCount) as TextView
+        val characterCount = itemView.findViewById(R.id.worldCardCharactersCount) as TextView
+    }
+
+}

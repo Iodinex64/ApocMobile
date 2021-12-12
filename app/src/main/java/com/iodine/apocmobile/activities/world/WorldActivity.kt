@@ -1,10 +1,11 @@
-package com.iodine.apocmobile.activities
+package com.iodine.apocmobile.activities.world
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.iodine.apocmobile.R
+import com.iodine.apocmobile.activities.main.MainActivity
 
 class WorldActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,6 +22,12 @@ class WorldActivity : AppCompatActivity() {
         createButton.setOnClickListener {
             val createWorldIntent = Intent(this, CreateWorldActivity::class.java)
             startActivity(createWorldIntent)
+        }
+
+        val editButton = findViewById<Button>(R.id.editWorldsButton)
+        editButton.setOnClickListener {
+            val editWorldIntent = Intent(this, EditWorldActivity::class.java)
+            startActivity(editWorldIntent)
         }
     }
 }

@@ -1,4 +1,4 @@
-package com.iodine.apocmobile.activities
+package com.iodine.apocmobile.activities.world
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

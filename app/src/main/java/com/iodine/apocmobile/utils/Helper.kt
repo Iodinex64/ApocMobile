@@ -3,7 +3,6 @@ package com.iodine.apocmobile.utils
 import android.app.Activity
 import android.view.inputmethod.InputMethodManager
 
-
 object Helper {
     fun hideSoftKeyboard(activity: Activity) {
         val inputMethodManager: InputMethodManager = activity.getSystemService(

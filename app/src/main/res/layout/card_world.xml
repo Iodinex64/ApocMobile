@@ -13,19 +13,26 @@
         android:padding="16dp">
 
         <TextView
-            android:id="@+id/worldTitle"
+            android:id="@+id/worldCardTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:textSize="30sp"
-            tools:text="A Title" />
+            tools:text="World Name" />
 
         <TextView
-            android:id="@+id/description"
+            android:id="@+id/worldCardLocationsCount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/worldTitle"
-            tools:text="A Description" />
+            android:layout_below="@id/worldCardTitle"
+            tools:text="Locations: 0" />
+
+        <TextView
+            android:id="@+id/worldCardCharactersCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/worldCardLocationsCount"
+            tools:text="Characters: 0" />
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
