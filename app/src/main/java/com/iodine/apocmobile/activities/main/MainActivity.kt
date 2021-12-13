@@ -6,7 +6,8 @@ import android.os.Bundle
 import android.widget.Button
 import com.google.android.material.snackbar.Snackbar
 import com.iodine.apocmobile.R
-import com.iodine.apocmobile.activities.world.WorldActivity
+import com.iodine.apocmobile.activities.location.BaseLocationActivity
+import com.iodine.apocmobile.activities.world.BaseWorldActivity
 import com.iodine.apocmobile.main.MainApp
 import com.iodine.apocmobile.utils.DataManager
 import timber.log.Timber
@@ -21,8 +22,12 @@ class MainActivity : AppCompatActivity() {
 
         val worldButton = findViewById<Button>(R.id.goToWorldsActivityButton)
         worldButton.setOnClickListener {
-            val worldIntent = Intent(this, WorldActivity::class.java)
-            startActivity(worldIntent)
+            startActivity(Intent(this, BaseWorldActivity::class.java))
+        }
+
+        val locationsButton = findViewById<Button>(R.id.goToLocationsActivity)
+        locationsButton.setOnClickListener {
+            startActivity(Intent(this, BaseLocationActivity::class.java))
         }
 
         val nukeButton = findViewById<Button>(R.id.deleteEverythingButton)

@@ -7,27 +7,24 @@ import android.widget.Button
 import com.iodine.apocmobile.R
 import com.iodine.apocmobile.activities.main.MainActivity
 
-class WorldActivity : AppCompatActivity() {
+class BaseWorldActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_world)
+        setContentView(R.layout.activity_base_world)
 
         val backButton = findViewById<Button>(R.id.worldsBackButton)
         backButton.setOnClickListener {
-            val backIntent = Intent(this, MainActivity::class.java)
-            startActivity(backIntent)
+            startActivity(Intent(this, MainActivity::class.java))
         }
 
         val createButton = findViewById<Button>(R.id.createWorldButton)
         createButton.setOnClickListener {
-            val createWorldIntent = Intent(this, CreateWorldActivity::class.java)
-            startActivity(createWorldIntent)
+            startActivity(Intent(this, CreateWorldActivity::class.java))
         }
 
         val editButton = findViewById<Button>(R.id.editWorldsButton)
         editButton.setOnClickListener {
-            val editWorldIntent = Intent(this, DisplayWorldsActivity::class.java)
-            startActivity(editWorldIntent)
+            startActivity(Intent(this, DisplayWorldsActivity::class.java))
         }
     }
 }

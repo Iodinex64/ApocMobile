@@ -5,7 +5,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.iodine.apocmobile.R
@@ -39,7 +38,7 @@ class DisplayWorldsActivity : AppCompatActivity() {
 
         val cancelButton = findViewById<Button>(R.id.displayWorldsBackButton)
         cancelButton.setOnClickListener {
-            val worldIntent = Intent(this, WorldActivity::class.java)
+            val worldIntent = Intent(this, BaseWorldActivity::class.java)
             startActivity(worldIntent)
         }
     }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.world.WorldActivity">
+    tools:context=".activities.location.BaseLocationActivity">
 
     <LinearLayout
         android:layout_width="278dp"
@@ -16,19 +16,19 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/createWorldButton"
+            android:id="@+id/createlocationButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/create_world_button_text" />
+            android:text="@string/create_location_button_text" />
 
         <Button
-            android:id="@+id/editWorldsButton"
+            android:id="@+id/editlocationsButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/edit_world_button_text" />
+            android:text="@string/edit_location_button_text" />
 
         <Button
-            android:id="@+id/worldsBackButton"
+            android:id="@+id/locationsBackButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/generic_back" />

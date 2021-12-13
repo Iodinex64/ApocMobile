@@ -46,7 +46,7 @@ class CreateWorldActivity : AppCompatActivity() {
 
         val cancelButton = findViewById<Button>(R.id.createWorldCancelButton)
         cancelButton.setOnClickListener {
-            startActivity(Intent(this, WorldActivity::class.java))
+            startActivity(Intent(this, BaseWorldActivity::class.java))
         }
     }
 }
