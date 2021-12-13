@@ -14,6 +14,9 @@
             android:name=".activities.world.EditWorldActivity"
             android:exported="false" />
         <activity
+            android:name=".activities.world.DisplayWorldsActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.world.CreateWorldActivity"
             android:exported="true" />
         <activity

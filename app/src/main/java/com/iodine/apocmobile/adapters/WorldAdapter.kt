@@ -6,10 +6,13 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.iodine.apocmobile.R
 import com.iodine.apocmobile.models.World
+import com.iodine.apocmobile.utils.DataManager
 import com.iodine.apocmobile.utils.inflate
 
-public class WorldAdapter(private val worlds: ArrayList<World>)
+class WorldAdapter(private val worlds: ArrayList<World>)
     : RecyclerView.Adapter<WorldAdapter.WorldHolder>()  {
+
+    var itemClickListener: ((position: Int, name: String) -> Unit)? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): WorldHolder {
         val inflatedView = parent.inflate(R.layout.card_world, false)
@@ -18,10 +21,13 @@ public class WorldAdapter(private val worlds: ArrayList<World>)
 
     override fun onBindViewHolder(holder: WorldHolder, position: Int) {
         val element = worlds[position]
-        // Updating the text of the txtName with this element
         holder.worldName.text = element.name
         holder.locationCount.text = "Locations: " + element.locations.size.toString()
         holder.characterCount.text = "Characters: " + element.characters.size.toString()
+        holder.itemView.setOnClickListener {
+            itemClickListener?.invoke(position, element.toString())
+        }
+        holder.itemView.isSelected = DataManager.selectedItemIndex == position
     }
 
     override fun getItemCount() = worlds.size
@@ -31,5 +37,4 @@ public class WorldAdapter(private val worlds: ArrayList<World>)
         val locationCount = itemView.findViewById(R.id.worldCardLocationsCount) as TextView
         val characterCount = itemView.findViewById(R.id.worldCardCharactersCount) as TextView
     }
-
 }

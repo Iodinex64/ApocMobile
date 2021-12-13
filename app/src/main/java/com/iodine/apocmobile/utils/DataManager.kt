@@ -8,7 +8,6 @@ import java.nio.file.Files
 import java.nio.file.Paths
 //we need all of them anyway lol
 import com.iodine.apocmobile.models.*
-import java.io.File
 import android.content.Context
 
 object DataManager {
@@ -19,7 +18,7 @@ object DataManager {
     var masterCreatures = ArrayList<Creature>()
     var masterLandmarks = ArrayList<Landmark>()
 
-    var index = 0
+    var selectedItemIndex = 0
 
     fun createWorld(name: String) {
         val w = World(name)
@@ -214,6 +213,13 @@ object DataManager {
             loc.calculatePop()
             println("Landmarks Count: " + masterLandmarks.size)
         }
+    }
+
+    //DANGEROUS LOL
+    fun NukeAll(c: Context) {
+        masterWorlds.clear()
+        saveToJSON(c)
+        readFromJSON(c)
     }
 
     fun saveToJSON(c: Context) {

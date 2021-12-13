@@ -20,7 +20,14 @@ class CreateWorldActivity : AppCompatActivity() {
         val submitButton = findViewById<Button>(R.id.createWorldSubmitButton)
         submitButton.setOnClickListener {
             val worldNameText = findViewById<TextView>(R.id.createWorldNameText).text.toString()
-            if (worldNameText.isNotEmpty()) {
+            var worldExists = false
+            for (world in DataManager.masterWorlds) {
+                if (world.name == worldNameText) {
+                    worldExists = true
+                    break
+                }
+            }
+            if (worldNameText.isNotEmpty() && !worldExists) {
                 DataManager.createWorld(worldNameText)
                 DataManager.saveToJSON(applicationContext)
                 //show snackbar notification

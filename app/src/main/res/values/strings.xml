@@ -10,4 +10,5 @@
     <string name="races">Races</string>
     <string name="creatures">Creatures</string>
     <string name="landmarks">Landmarks</string>
+    <string name="edit_world_name_startertext">Error!</string>
 </resources>

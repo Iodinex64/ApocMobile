@@ -26,7 +26,7 @@ class WorldActivity : AppCompatActivity() {
 
         val editButton = findViewById<Button>(R.id.editWorldsButton)
         editButton.setOnClickListener {
-            val editWorldIntent = Intent(this, EditWorldActivity::class.java)
+            val editWorldIntent = Intent(this, DisplayWorldsActivity::class.java)
             startActivity(editWorldIntent)
         }
     }
