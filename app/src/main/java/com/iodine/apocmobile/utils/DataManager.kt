@@ -27,10 +27,8 @@ object DataManager {
     }
 
     
-    fun editWorld(w: World, index: Int) {
-        println("Replaced " + masterWorlds[index].toString())
-        masterWorlds[index] = w
-        println("With $w")
+    fun editWorld(n: String, index: Int) {
+        masterWorlds[index].name = n
     }
 
     fun editCharacter(newC: Character, index: Int) {

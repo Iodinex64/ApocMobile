@@ -24,7 +24,7 @@
         app:layout_constraintTop_toBottomOf="@+id/worldRecyclerView">
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/displayWorldsBackButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/generic_back"

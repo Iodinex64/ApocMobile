@@ -17,7 +17,7 @@ class CreateWorldActivity : AppCompatActivity() {
         setContentView(R.layout.activity_create_world)
         Timber.i("Went to world menu!")
 
-        val submitButton = findViewById<Button>(R.id.createWorldSubmitButton)
+        var submitButton = findViewById<Button>(R.id.createWorldSubmitButton)
         submitButton.setOnClickListener {
             val worldNameText = findViewById<TextView>(R.id.createWorldNameText).text.toString()
             var worldExists = false
@@ -31,12 +31,7 @@ class CreateWorldActivity : AppCompatActivity() {
                 DataManager.createWorld(worldNameText)
                 DataManager.saveToJSON(applicationContext)
                 //show snackbar notification
-                val notification = Snackbar.make(
-                    findViewById(android.R.id.content),
-                    "World $worldNameText successfully created.",
-                    Snackbar.LENGTH_SHORT
-                )
-                notification.show()
+                startActivity(Intent(this, DisplayWorldsActivity::class.java))
             }
             else {
                 val notification = Snackbar.make(
@@ -51,8 +46,7 @@ class CreateWorldActivity : AppCompatActivity() {
 
         val cancelButton = findViewById<Button>(R.id.createWorldCancelButton)
         cancelButton.setOnClickListener {
-            val worldIntent = Intent(this, WorldActivity::class.java)
-            startActivity(worldIntent)
+            startActivity(Intent(this, WorldActivity::class.java))
         }
     }
 }
