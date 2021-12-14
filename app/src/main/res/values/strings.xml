@@ -13,4 +13,5 @@
     <string name="edit_world_name_startertext">Error!</string>
     <string name="create_location_button_text">Create Location</string>
     <string name="edit_location_button_text">Edit Locations</string>
+    <string name="create_location_name_startertext">Location Name</string>
 </resources>

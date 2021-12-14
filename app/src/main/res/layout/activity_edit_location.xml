@@ -37,25 +37,23 @@
             android:text="Bio" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/editLocationWorldName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="World" />
-
-        <Spinner
-            android:id="@+id/editLocationSelectWorldSpinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:dropDownWidth="match_parent"
-            android:entries="@android:array/emailAddressTypes"
-            android:minHeight="48dp"
-            tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
             android:id="@+id/editLocationSubmitButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Submit" />
+            android:text="Confirm Edit location" />
+
+        <Button
+            android:id="@+id/editLocationDeleteButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F44336"
+            android:text="Delete This Location" />
 
         <Button
             android:id="@+id/editLocationCancelButton"

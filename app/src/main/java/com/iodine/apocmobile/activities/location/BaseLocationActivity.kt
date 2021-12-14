@@ -26,7 +26,7 @@ class BaseLocationActivity : AppCompatActivity() {
 
         val editButton = findViewById<Button>(R.id.editlocationsButton)
         editButton.setOnClickListener {
-            //startActivity(Intent(this, DisplayLocationsActivity::class.java))
+            startActivity(Intent(this, DisplayLocationsActivity::class.java))
         }
     }
 }
