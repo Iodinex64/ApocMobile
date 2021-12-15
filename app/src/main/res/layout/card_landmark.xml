@@ -16,32 +16,32 @@
         android:padding="16dp">
 
         <TextView
-            android:id="@+id/locationCardTitle"
+            android:id="@+id/landmarkCardTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:textSize="30sp"
-            tools:text="location Name" />
+            tools:text="landmark Name" />
 
         <TextView
-            android:id="@+id/locationCardWorldName"
+            android:id="@+id/landmarkCardLocationName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/locationCardTitle"
-            tools:text="World:" />
+            android:layout_below="@id/landmarkCardTitle"
+            tools:text="Location:" />
 
         <TextView
-            android:id="@+id/locationCardBioText"
+            android:id="@+id/landmarkCardBioText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/locationCardPopText"
+            android:layout_below="@id/landmarkCardPopText"
             tools:text="Bio: " />
 
         <TextView
-            android:id="@+id/locationCardPopText"
+            android:id="@+id/landmarkCardPopText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/locationCardWorldName"
+            android:layout_below="@+id/landmarkCardLocationName"
             tools:text="Population:" />
 
     </RelativeLayout>

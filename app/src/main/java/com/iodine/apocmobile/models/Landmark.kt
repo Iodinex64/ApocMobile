@@ -9,4 +9,8 @@ class Landmark constructor(
     override fun toString(): String {
         return "Landmark: $name (About: $bio | Location: $locationName | Population: $population)"
     }
+
+    fun getPop(): Int {
+        return population
+    }
 }

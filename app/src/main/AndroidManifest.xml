@@ -13,6 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ApocMobile">
         <activity
+            android:name=".activities.landmark.EditLandmarkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.landmark.DisplayLandmarksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.landmark.CreateLandmarkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.landmark.BaseLandmarkActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.location.EditLocationActivity"
             android:exported="false" />
         <activity

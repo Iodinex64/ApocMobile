@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.location.CreateLocationActivity">
+    tools:context=".activities.landmark.EditLandmarkActivity">
 
     <LinearLayout
         android:layout_width="278dp"
@@ -17,17 +17,17 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <EditText
-            android:id="@+id/editLocationNameText"
+            android:id="@+id/editLandmarkNameText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:importantForAutofill="no"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:text="@string/create_location_name_startertext"
-            android:importantForAutofill="no" />
+            android:text="Landmark Name" />
 
         <EditText
-            android:id="@+id/editLocationBioText"
+            android:id="@+id/editLandmarkBioText"
             android:layout_width="match_parent"
             android:layout_height="129dp"
             android:ems="10"
@@ -37,28 +37,41 @@
             android:text="Bio" />
 
         <TextView
-            android:id="@+id/editLandmarkLocationName"
+            android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="World" />
+            android:text="Population" />
 
-        <Spinner
-            android:id="@+id/editLocationSelectWorldSpinner"
+        <EditText
+            android:id="@+id/editLandmarkPopulationNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:dropDownWidth="match_parent"
-            android:entries="@android:array/emailAddressTypes"
+            android:ems="10"
+            android:inputType="number"
             android:minHeight="48dp"
             tools:ignore="SpeakableTextPresentCheck" />
 
-        <Button
-            android:id="@+id/editLocationSubmitButton"
+        <TextView
+            android:id="@+id/editLandmarkLocationName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Submit" />
+            android:text="Location" />
 
         <Button
-            android:id="@+id/editLocationCancelButton"
+            android:id="@+id/editLandmarkSubmitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit This Landmark" />
+
+        <Button
+            android:id="@+id/editLandmarkDeleteButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F44336"
+            android:text="Delete Landmark" />
+
+        <Button
+            android:id="@+id/editLandmarkCancelButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Back" />

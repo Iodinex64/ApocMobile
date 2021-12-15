@@ -30,24 +30,6 @@
             android:text="@string/locations" />
 
         <Button
-            android:id="@+id/goToCharactersActivity"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/characters" />
-
-        <Button
-            android:id="@+id/goToRacesActivity"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/races" />
-
-        <Button
-            android:id="@+id/goToCreaturesActivity"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/creatures" />
-
-        <Button
             android:id="@+id/goToLandmarksActivity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

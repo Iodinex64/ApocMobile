@@ -3,16 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/mobiledev/ApocMobile/app/src/main/res/layout/activity_base_landmark.xml" value="0.20520833333333333" />
         <entry key="..\:/mobiledev/ApocMobile/app/src/main/res/layout/activity_base_location.xml" value="0.36666666666666664" />
+        <entry key="..\:/mobiledev/ApocMobile/app/src/main/res/layout/activity_create_landmark.xml" value="0.36666666666666664" />
         <entry key="..\:/mobiledev/ApocMobile/app/src/main/res/layout/activity_create_location.xml" value="0.36666666666666664" />
         <entry key="..\:/mobiledev/ApocMobile/app/src/main/res/layout/activity_create_world.xml" value="0.33" />
+        <entry key="..\:/mobiledev/ApocMobile/app/src/main/res/layout/activity_display_landmarks.xml" value="0.36666666666666664" />
         <entry key="..\:/mobiledev/ApocMobile/app/src/main/res/layout/activity_display_locations.xml" value="0.36666666666666664" />
         <entry key="..\:/mobiledev/ApocMobile/app/src/main/res/layout/activity_display_worlds.xml" value="0.36666666666666664" />
+        <entry key="..\:/mobiledev/ApocMobile/app/src/main/res/layout/activity_edit_landmark.xml" value="0.36666666666666664" />
         <entry key="..\:/mobiledev/ApocMobile/app/src/main/res/layout/activity_edit_location.xml" value="0.33" />
         <entry key="..\:/mobiledev/ApocMobile/app/src/main/res/layout/activity_edit_world.xml" value="0.36666666666666664" />
         <entry key="..\:/mobiledev/ApocMobile/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/mobiledev/ApocMobile/app/src/main/res/layout/activity_world.xml" value="0.36666666666666664" />
-        <entry key="..\:/mobiledev/ApocMobile/app/src/main/res/layout/card_location.xml" value="0.36666666666666664" />
+        <entry key="..\:/mobiledev/ApocMobile/app/src/main/res/layout/card_landmark.xml" value="0.36666666666666664" />
+        <entry key="..\:/mobiledev/ApocMobile/app/src/main/res/layout/card_location.xml" value="0.5" />
         <entry key="..\:/mobiledev/ApocMobile/app/src/main/res/layout/card_world.xml" value="0.5" />
       </map>
     </option>

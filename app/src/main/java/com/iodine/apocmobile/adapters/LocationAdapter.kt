@@ -1,5 +1,6 @@
 package com.iodine.apocmobile.adapters
 
+import android.annotation.SuppressLint
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
@@ -19,11 +20,13 @@ class LocationAdapter(private val locations: ArrayList<Location>)
         return LocationHolder(inflatedView)
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: LocationHolder, position: Int) {
         val element = locations[position]
         holder.locationName.text = element.name
-        holder.locationBio.text = element.bio
-        holder.locationWorld.text = element.worldName
+        holder.locationBio.text = "Bio: " + element.bio
+        holder.locationWorld.text = "World: " + element.worldName
+        holder.locationPop.text = "Population: " + element.getPop().toString()
         holder.itemView.setOnClickListener {
             itemClickListener?.invoke(position, element.toString())
         }
@@ -36,5 +39,6 @@ class LocationAdapter(private val locations: ArrayList<Location>)
         val locationName = itemView.findViewById(R.id.locationCardTitle) as TextView
         val locationWorld = itemView.findViewById(R.id.locationCardWorldName) as TextView
         val locationBio = itemView.findViewById(R.id.locationCardBioText) as TextView
+        val locationPop = itemView.findViewById(R.id.locationCardPopText) as TextView
     }
 }

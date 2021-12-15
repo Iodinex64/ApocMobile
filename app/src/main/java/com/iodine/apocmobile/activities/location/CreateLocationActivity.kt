@@ -17,8 +17,6 @@ class CreateLocationActivity : AppCompatActivity() {
         setContentView(R.layout.activity_create_location)
 
         val worldSpinner = findViewById<Spinner>(R.id.editLocationSelectWorldSpinner)
-        val locationNameText = findViewById<TextView>(R.id.editLocationNameText).text.toString()
-        val locationBioText = findViewById<TextView>(R.id.editLocationBioText).text.toString()
 
         val worldNames = arrayListOf<String>()
         for (world in DataManager.masterWorlds) {
@@ -44,6 +42,8 @@ class CreateLocationActivity : AppCompatActivity() {
 
         val submitButton = findViewById<Button>(R.id.editLocationSubmitButton)
         submitButton.setOnClickListener {
+            val locationNameText = findViewById<TextView>(R.id.editLocationNameText).text.toString()
+            val locationBioText = findViewById<TextView>(R.id.editLocationBioText).text.toString()
 
             var locationExists = false
             for (location in DataManager.masterLocations) {
