@@ -16,4 +16,6 @@
     <string name="create_location_name_startertext">Location Name</string>
     <string name="create_landmark_button_text">Create Landmark</string>
     <string name="edit_landmark_button_text">Edit Landmarks</string>
+    <string name="edit_character_button_text">Edit Characters</string>
+    <string name="create_character_button_text">Create Character</string>
 </resources>

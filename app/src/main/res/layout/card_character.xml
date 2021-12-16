@@ -16,33 +16,40 @@
         android:padding="16dp">
 
         <TextView
-            android:id="@+id/landmarkCardTitle"
+            android:id="@+id/characterCardTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:textSize="30sp"
-            tools:text="landmark Name" />
+            tools:text="character Name" />
 
         <TextView
-            android:id="@+id/landmarkCardLocationName"
+            android:id="@+id/characterCardWorldName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/landmarkCardTitle"
+            android:layout_below="@id/characterCardRaceName"
             tools:text="World:" />
 
         <TextView
-            android:id="@+id/landmarkCardBioText"
+            android:id="@+id/characterCardBioText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/landmarkCardPopText"
+            android:layout_below="@id/characterCardWorldName"
             tools:text="Bio: " />
 
-        <TextView
-            android:id="@+id/landmarkCardPopText"
+        <ImageView
+            android:id="@+id/characterCardPortrait"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/landmarkCardLocationName"
-            tools:text="Population:" />
+            android:layout_below="@id/characterCardTitle"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/characterCardRaceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/characterCardPortrait"
+            android:text="Race:" />
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

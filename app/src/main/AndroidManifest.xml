@@ -13,6 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ApocMobile">
         <activity
+            android:name=".activities.character.EditCharacterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.character.DisplayCharactersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.character.CreateCharacterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.character.BaseCharacterActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.landmark.EditLandmarkActivity"
             android:exported="false" />
         <activity

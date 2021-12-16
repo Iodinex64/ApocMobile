@@ -9,6 +9,7 @@ import java.nio.file.Paths
 //we need all of them anyway lol
 import com.iodine.apocmobile.models.*
 import android.content.Context
+import android.net.Uri
 
 object DataManager {
     var masterWorlds = ArrayList<World>()
@@ -176,8 +177,8 @@ object DataManager {
         }
     }
 
-    fun createCharacter(name: String, race: Race, world: World, bio: String) {
-        val c = Character(name, race, bio, world.name)
+    fun createCharacter(name: String, race: String, world: World, bio: String, URI: Uri) {
+        val c = Character(name, race, bio, world.name, URI)
         masterCharacters.add(c)
         if (masterWorlds.contains(world)) {
             world.characters.add(c)

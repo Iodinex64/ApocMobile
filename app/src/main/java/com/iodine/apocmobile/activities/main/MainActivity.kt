@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import com.google.android.material.snackbar.Snackbar
 import com.iodine.apocmobile.R
+import com.iodine.apocmobile.activities.character.BaseCharacterActivity
 import com.iodine.apocmobile.activities.landmark.BaseLandmarkActivity
 import com.iodine.apocmobile.activities.location.BaseLocationActivity
 import com.iodine.apocmobile.activities.world.BaseWorldActivity
@@ -34,6 +35,11 @@ class MainActivity : AppCompatActivity() {
         val landmarksButton = findViewById<Button>(R.id.goToLandmarksActivity)
         landmarksButton.setOnClickListener {
             startActivity(Intent(this, BaseLandmarkActivity::class.java))
+        }
+
+        val charactersButton = findViewById<Button>(R.id.goToCharactersActivity)
+        charactersButton.setOnClickListener {
+            startActivity(Intent(this, BaseCharacterActivity::class.java))
         }
 
         val nukeButton = findViewById<Button>(R.id.deleteEverythingButton)

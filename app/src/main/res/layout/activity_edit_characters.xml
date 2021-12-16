@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.character.EditCharacterActivity">
+
+    <LinearLayout
+        android:layout_width="278dp"
+        android:layout_height="588dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/editCharacterPortrait"
+            android:layout_width="match_parent"
+            android:layout_height="147dp"
+            tools:src="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/editCharacterChangePortraitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Portrait" />
+
+        <EditText
+            android:id="@+id/editCharacterNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Character Name" />
+
+        <EditText
+            android:id="@+id/editCharacteRaceText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Race" />
+
+        <EditText
+            android:id="@+id/editCharacterBioText"
+            android:layout_width="match_parent"
+            android:layout_height="129dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:minHeight="48dp"
+            android:text="Bio" />
+
+        <TextView
+            android:id="@+id/editCharacterWorldName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="World" />
+
+        <Button
+            android:id="@+id/editCharacterSubmitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit This Character" />
+
+        <Button
+            android:id="@+id/editCharacterDeleteButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F44336"
+            android:text="Delete Character" />
+
+        <Button
+            android:id="@+id/editCharacterCancelButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
