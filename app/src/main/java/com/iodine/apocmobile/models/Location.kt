@@ -6,8 +6,6 @@ class Location constructor(
     var worldName: String = ""
 ) {
     var landmarks = arrayListOf<Landmark>()
-    var creatures = arrayListOf<Creature>()
-    var races = arrayListOf<Race>()
     private var population: Int = 0
 
     fun calculatePop() {
@@ -20,10 +18,6 @@ class Location constructor(
 
     fun addLandmark(l: Landmark) {
         landmarks.add(l)
-    }
-
-    fun addCreature(cr: Creature) {
-        creatures.add(cr)
     }
 
     fun getPop(): Int { return population }

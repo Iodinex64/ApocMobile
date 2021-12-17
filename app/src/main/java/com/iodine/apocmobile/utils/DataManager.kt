@@ -14,9 +14,9 @@ import android.net.Uri
 object DataManager {
     var masterWorlds = ArrayList<World>()
     var masterCharacters = ArrayList<Character>()
-    var masterRaces = ArrayList<Race>()
+
     var masterLocations = ArrayList<Location>()
-    var masterCreatures = ArrayList<Creature>()
+
     var masterLandmarks = ArrayList<Landmark>()
 
     var selectedItemIndex = 0
@@ -52,34 +52,6 @@ object DataManager {
                 world.locations[i] = newL
                 masterLocations[index] = newL
                 println("With $newL")
-            }
-        }
-    }
-
-    fun editCreature(newCR: Creature, index: Int) {
-        println("Replaced " + masterCreatures[index].toString())
-        for (world in masterWorlds) {
-            for (location in world.locations) {
-                if (location.creatures.contains(masterCreatures[index])) {
-                    val i = location.creatures.indexOf(masterCreatures[index])
-                    location.creatures[i] = newCR
-                    masterCreatures[index] = newCR
-                    println("With $newCR")
-                }
-            }
-        }
-    }
-
-    fun editRace(newR: Race, index: Int) {
-        println("Replaced " + masterRaces[index].toString())
-        for (world in masterWorlds) {
-            for (location in world.locations) {
-                if (location.races.contains(masterRaces[index])) {
-                    val i = location.races.indexOf(masterRaces[index])
-                    location.races[i] = newR
-                    masterRaces[index] = newR
-                    println("With $newR")
-                }
             }
         }
     }
@@ -129,32 +101,6 @@ object DataManager {
         println("Done removing.")
     }
 
-    fun removeCreatureAtIndex(index: Int) {
-        val cr = masterCreatures[index]
-        println("Removing creature: $cr")
-        for (world in masterWorlds) {
-            for (location in world.locations)
-                if (location.creatures.contains((cr))) {
-                    location.creatures.remove(cr)
-                    println("Done removing.")
-                }
-        }
-        masterCreatures.remove(cr)
-    }
-
-    fun removeRaceAtIndex(index: Int) {
-        val r = masterRaces[index]
-        println("Removing creature: $r")
-        for (world in masterWorlds) {
-            for (location in world.locations)
-                if (location.races.contains((r))) {
-                    location.races.remove(r)
-                    println("Done removing.")
-                }
-        }
-        masterRaces.remove(r)
-    }
-
     fun removeLandmarkAtIndex(index: Int) {
         val la = masterLandmarks[index]
         println("Removing landmark: $la")
@@ -184,24 +130,6 @@ object DataManager {
             world.characters.add(c)
         }
         println("Characters Count: " + masterCharacters.size)
-    }
-
-    fun createCreature(name: String, home: Location, bio: String) {
-        val cr = Creature(name, bio, home.name)
-        masterCreatures.add(cr)
-        if (masterLocations.contains(home)) {
-            home.addCreature(cr)
-        }
-        println("Creatures Count: " + masterCreatures.size)
-    }
-
-    fun createRace(name: String, home: Location, bio: String) {
-        val r = Race(name, bio, home.name)
-        masterRaces.add(r)
-        if (masterLocations.contains(home)) {
-            home.races.add(r)
-        }
-        println("Races Count: " + masterRaces.size)
     }
 
     fun createLandmark(name: String, bio: String, population: Int, loc: Location) {
@@ -246,9 +174,7 @@ object DataManager {
                 masterCharacters.addAll(wor.characters)
             }
             for (loc in masterLocations) {
-                masterRaces.addAll(loc.races)
                 masterLandmarks.addAll(loc.landmarks)
-                masterCreatures.addAll(loc.creatures)
             }
             //we're done
             reader.close()
@@ -257,8 +183,6 @@ object DataManager {
             println("   Worlds loaded: " + masterWorlds.size)
             println("   Locations loaded: " + masterLocations.size)
             println("   Characters loaded: " + masterCharacters.size)
-            println("   Races loaded: " + masterRaces.size)
-            println("   Creatures loaded: " + masterCreatures.size)
             println("   Landmarks loaded: " + masterLandmarks.size)
         } catch (e: Exception) {
             println("Couldn't load from database, making new one...")
