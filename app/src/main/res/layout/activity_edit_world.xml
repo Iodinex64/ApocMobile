@@ -30,20 +30,20 @@
             android:id="@+id/editWorldSubmitButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Confirm Edit World" />
+            android:text="@string/confirm_edit_world" />
 
         <Button
             android:id="@+id/editWorldDeleteButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#F44336"
-            android:text="Delete This World" />
+            android:text="@string/delete_this_world" />
 
         <Button
             android:id="@+id/editWorldCancelButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Back" />
+            android:text="@string/back" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

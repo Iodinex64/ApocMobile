@@ -34,32 +34,32 @@
             android:gravity="start|top"
             android:inputType="textMultiLine"
             android:minHeight="48dp"
-            android:text="Bio" />
+            android:text="@string/bio" />
 
         <TextView
             android:id="@+id/editLocationWorldName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="World" />
+            android:text="@string/world" />
 
         <Button
             android:id="@+id/editLocationSubmitButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Confirm Edit location" />
+            android:text="@string/confirm_edit_location" />
 
         <Button
             android:id="@+id/editLocationDeleteButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#F44336"
-            android:text="Delete This Location" />
+            android:text="@string/delete_this_location" />
 
         <Button
             android:id="@+id/editLocationCancelButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Back" />
+            android:text="@string/back" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

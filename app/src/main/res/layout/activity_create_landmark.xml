@@ -24,7 +24,7 @@
             android:importantForAutofill="no"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:text="Landmark Name" />
+            android:text="@string/landmark_name" />
 
         <EditText
             android:id="@+id/editLandmarkBioText"
@@ -34,13 +34,13 @@
             android:gravity="start|top"
             android:inputType="textMultiLine"
             android:minHeight="48dp"
-            android:text="Bio" />
+            android:text="@string/bio" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Population" />
+            android:text="@string/population" />
 
         <EditText
             android:id="@+id/editLandmarkPopulationNumber"
@@ -55,7 +55,7 @@
             android:id="@+id/editLandmarkLocationName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Location" />
+            android:text="@string/location" />
 
         <Spinner
             android:id="@+id/editLandmarkSelectLocationSpinner"
@@ -70,13 +70,13 @@
             android:id="@+id/editLandmarkSubmitButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Submit" />
+            android:text="@string/submit" />
 
         <Button
             android:id="@+id/editLandmarkCancelButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Back" />
+            android:text="@string/back" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

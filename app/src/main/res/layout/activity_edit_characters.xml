@@ -26,7 +26,7 @@
             android:id="@+id/editCharacterChangePortraitButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Select Portrait" />
+            android:text="@string/select_portrait" />
 
         <EditText
             android:id="@+id/editCharacterNameText"
@@ -36,7 +36,7 @@
             android:importantForAutofill="no"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:text="Character Name" />
+            android:text="@string/character_name" />
 
         <EditText
             android:id="@+id/editCharacteRaceText"
@@ -45,7 +45,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:text="Race" />
+            android:text="@string/race" />
 
         <EditText
             android:id="@+id/editCharacterBioText"
@@ -55,32 +55,32 @@
             android:gravity="start|top"
             android:inputType="textMultiLine"
             android:minHeight="48dp"
-            android:text="Bio" />
+            android:text="@string/bio" />
 
         <TextView
             android:id="@+id/editCharacterWorldName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="World" />
+            android:text="@string/world" />
 
         <Button
             android:id="@+id/editCharacterSubmitButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Edit This Character" />
+            android:text="@string/edit_this_character" />
 
         <Button
             android:id="@+id/editCharacterDeleteButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#F44336"
-            android:text="Delete Character" />
+            android:text="@string/delete_character" />
 
         <Button
             android:id="@+id/editCharacterCancelButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Back" />
+            android:text="@string/back" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
